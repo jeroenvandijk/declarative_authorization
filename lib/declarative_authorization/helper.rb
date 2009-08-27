@@ -56,5 +56,7 @@ module Authorization
     def has_role_with_hierarchy?(*roles, &block)
       controller.has_role_with_hierarchy?(*roles, &block)
     end
+    alias_method :has_permissions_of?, :has_role_with_hierarchy?
+    
   end
 end

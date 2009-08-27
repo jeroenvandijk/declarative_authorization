@@ -136,6 +136,8 @@ class HelperTest < ActionController::TestCase
     assert has_role_with_hierarchy?(:test_role)
     assert !has_role_with_hierarchy?(:other_role)
 
+    assert has_permissions_of?(:test_role)
+
     block_evaled = false
     has_role_with_hierarchy?(:test_role) do
       block_evaled = true

@@ -81,7 +81,6 @@ module Authorization
       result
     end
     
-    
     protected
     def filter_access_filter # :nodoc:
       permissions = self.class.all_filter_access_permissions
